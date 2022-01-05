@@ -1,0 +1,16 @@
+name: eslint
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  eslint:
+    name: eslint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: install
+        run: yarn
+      - name: eslint
+        run: yarn run lint
