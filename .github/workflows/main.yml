@@ -28,6 +28,6 @@ jobs:
         with:
           node-version: '14.x'
       - run: yarn
-      - run: yarn dev
-      - run: yarn prisma migrate dev
+      - run: yarn build
+      - run: yarn prisma migrate deploy
       - run: yarn test
