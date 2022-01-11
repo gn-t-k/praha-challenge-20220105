@@ -1,5 +1,0 @@
--- AlterTable
-ALTER TABLE "Member" ALTER COLUMN "pairId" DROP NOT NULL;
-
--- AlterTable
-ALTER TABLE "Pair" ALTER COLUMN "teamId" DROP NOT NULL;
