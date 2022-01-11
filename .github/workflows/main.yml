@@ -8,17 +8,18 @@ jobs:
   test:
     runs-on: ubuntu-latest
     services:
-      image: postgres
-      env:
-        POSTGRES_USER: root
-        POSTGRES_PASSWORD: password
-      options: >-
-        --health-cmd pg_isready
-        --health-interval 10s
-        --health-timeout 5s
-        --health-retries 5
-      ports:
-        - 5432:5432    
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: password
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432    
     env:
       DATABASE_URL: postgresql://root:password@localhost:5432/praha-challenge-postgresql
     steps:
