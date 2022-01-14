@@ -11,6 +11,10 @@ beforeEach(() => {
   };
 });
 
+afterAll(async () => {
+  await context.prisma.$disconnect();
+});
+
 describe("GetMemberByPairNameQueryService", () => {
   describe("チーム名とペア名で参加者を取得できる", () => {
     test("teamIDが正しく設定されている", async () => {
