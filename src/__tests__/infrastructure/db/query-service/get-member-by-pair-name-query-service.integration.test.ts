@@ -11,7 +11,7 @@ beforeEach(() => {
   };
 });
 
-afterAll(async () => {
+afterEach(async () => {
   await context.prisma.$disconnect();
 });
 
