@@ -24,9 +24,10 @@ jobs:
       DATABASE_URL: postgresql://root:password@localhost:5432/praha-challenge-postgresql
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: '14.x'
+          cache: yarn
       - run: yarn
       - run: yarn build
       - run: yarn prisma migrate deploy
