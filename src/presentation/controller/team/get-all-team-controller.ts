@@ -1,3 +1,3 @@
-import { IController } from "presentation/interface/controller/controller";
+// import { IController } from "presentation/interface/controller/controller";
 
-export class GetAllTeamController implements IController {}
+// export class GetAllTeamController implements IController {}

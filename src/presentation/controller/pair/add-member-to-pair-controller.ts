@@ -1,3 +1,3 @@
-import { IController } from "presentation/interface/controller/controller";
+// import { IController } from "presentation/interface/controller/controller";
 
-export class AddMemberToPairController implements IController {}
+// export class AddMemberToPairController implements IController {}
